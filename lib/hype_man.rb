@@ -30,11 +30,11 @@ module HypeMan
 
 end
 
-if "bers"
-  puts "other outside method test"
-end
+# if "bers"
+#   puts "other outside method test"
+# end
 
-HypeMan.set_alias("glog", "git log")
+# HypeMan.set_alias("glog", "git log")
 
 # class HypeMan
 #   def self.hi
