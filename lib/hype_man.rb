@@ -9,17 +9,19 @@ require_relative "hype_man/version"
 
 require 'shellwords'
 
-module MyTerminalAlias
+module HypeMan
 
   def self.set_alias(alias_name, command)
     if ENV['SHELL'] == '/bin/zsh'
       if command == "bundle exec rspec"
+        `echo "alias #{alias_name}='#{Shellwords.escape(command)}'" >> ~/.zshrc`
         puts "Way to test bro"
       elsif command == "rails db:drop"
+        `echo "alias #{alias_name}='#{Shellwords.escape(command)}'" >> ~/.zshrc`
         "do you even know how to database bro??"
       end
       `echo "alias #{alias_name}='#{Shellwords.escape(command)}'" >> ~/.zshrc`
-      puts "Hello World"
+      puts "escape test"
     else
       puts "Unsupported shell. Alias not set."
     end
@@ -28,13 +30,17 @@ module MyTerminalAlias
 end
 
 if "bers"
-  puts "way to test bro"
+  puts "other outside method test"
 end
 
-# MyTerminalAlias.set_alias("ber", "bundle exec rspec")
+HypeMan.set_alias("glog", "git log")
 
 # class HypeMan
 #   def self.hi
 #     puts "Hello world!"
 #   end
 # end
+
+# README
+# gem build hype_man.gemspec
+# gem install hype_man
