@@ -37,7 +37,7 @@ module HypeMan
       elsif
         command == "rails db:drop"
         puts "do you even know how to database bro??"
-      elsif
+      else
         command == "git log"
         puts "What do you want to see bro..."
       end
