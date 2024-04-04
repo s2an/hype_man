@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["141100397+s2an@users.noreply.github.com"]
 
   spec.summary = "A funny companion for all of your terminal commands!"
-  spec.description = "A funny companion for all of your terminal commands!"
+  spec.description = "A funny companion for all of your terminal commands!!"
   spec.homepage = "https://github.com/s2an/hype_man"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"

@@ -19,9 +19,10 @@ module HypeMan
       elsif command == "rails db:drop"
         `echo "alias #{alias_name}='#{Shellwords.escape(command)}'" >> ~/.zshrc`
         "do you even know how to database bro??"
-      end
+      elsif
       `echo "alias #{alias_name}='#{Shellwords.escape(command)}'" >> ~/.zshrc`
       puts "escape test"
+      end
     else
       puts "Unsupported shell. Alias not set."
     end
