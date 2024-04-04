@@ -2,10 +2,10 @@
 
 require_relative "hype_man/version"
 
-module HypeMan
-  class Error < StandardError; end
-  # Your code goes here...
-end
+# module HypeMan
+#   class Error < StandardError; end
+#   # Your code goes here...
+# end
 
 require 'shellwords'
 
@@ -24,8 +24,8 @@ end
 
 # MyTerminalAlias.set_alias("ber", "bundle exec rspec")
 
-class HypeMan
-  def self.hi
-    puts "Hello world!"
-  end
-end
+# class HypeMan
+#   def self.hi
+#     puts "Hello world!"
+#   end
+# end
