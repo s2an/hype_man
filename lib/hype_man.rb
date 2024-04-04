@@ -13,10 +13,10 @@ module HypeMan
 
   def self.set_alias(alias_name, command)
     if ENV['SHELL'] == '/bin/zsh'
-      if command == "bundle exec rspec"
+      if command || alias_name == "bundle exec rspec"
         `echo "alias #{alias_name}='#{Shellwords.escape(command)}'" >> ~/.zshrc`
         puts "Way to test bro"
-      elsif command == "rails db:drop"
+      elsif command || alias_name == "rails db:drop"
         `echo "alias #{alias_name}='#{Shellwords.escape(command)}'" >> ~/.zshrc`
         "do you even know how to database bro??"
       elsif
