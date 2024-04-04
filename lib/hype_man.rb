@@ -10,6 +10,7 @@ end
 require 'shellwords'
 
 module MyTerminalAlias
+
   def self.set_alias(alias_name, command)
     if ENV['SHELL'] == '/bin/zsh'
       `echo "alias #{alias_name}='#{Shellwords.escape(command)}'" >> ~/.zshrc`
@@ -18,6 +19,13 @@ module MyTerminalAlias
       puts "Unsupported shell. Alias not set."
     end
   end
+
 end
 
-MyTerminalAlias.set_alias("ber", "bundle exec rspec")
+# MyTerminalAlias.set_alias("ber", "bundle exec rspec")
+
+class HypeMan
+  def self.hi
+    puts "Hello world!"
+  end
+end
