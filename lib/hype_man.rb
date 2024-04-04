@@ -42,5 +42,6 @@ HypeMan.set_alias("glog", "git log")
 # end
 
 # README
+# update lib/hype_man/version
 # gem build hype_man.gemspec
 # gem install hype_man
