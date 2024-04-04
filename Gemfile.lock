@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    hype_man (0.1.0)
+    hype_man (0.2.9)
 
 GEM
   remote: https://rubygems.org/
