@@ -20,4 +20,4 @@ module MyTerminalAlias
   end
 end
 
-MyTerminalAlias.set_alias(bers, bundle_exec_rspec)
+MyTerminalAlias.set_alias("ber", "bundle exec rspec")
